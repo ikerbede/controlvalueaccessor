@@ -1,0 +1,7 @@
+<form (submit)="addUser($event)">
+  <user-form [formControl]="userControl"></user-form>
+  <button type="submit" [disabled]="userControl.invalid">ADD</button>
+</form>
+<div class="users">
+  <user [user]="user" *ngFor="let user of users"></user>
+</div>
