@@ -1,0 +1,43 @@
+<fieldset [formGroup]="experienceGroup">
+  <legend>Experience</legend>
+  <p>
+    <label for="company">Company</label>
+    <input
+      type="text"
+      name="company"
+      id="experience_company"
+      formControlName="company"
+      (blur)="onTouched()"
+    />
+  </p>
+  <p>
+    <label for="role">Role</label>
+    <input
+      type="text"
+      name="role"
+      id="experience_role"
+      formControlName="role"
+      (blur)="onTouched()"
+    />
+  </p>
+  <p>
+    <label for="startDate">Start date</label>
+    <input
+      type="date"
+      name="startDate"
+      id="experience_startDate"
+      formControlName="startDate"
+      (blur)="onTouched()"
+    />
+  </p>
+  <p>
+    <label for="endDate">End date</label>
+    <input
+      type="date"
+      name="endDate"
+      id="experience_endDate"
+      formControlName="endDate"
+      (blur)="onTouched()"
+    />
+  </p>
+</fieldset>
