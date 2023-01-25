@@ -1,0 +1,33 @@
+<form [formGroup]="cvGroup" (submit)="addCv($event)">
+  <fieldset>
+    <legend>Personal data</legend>
+    <p>
+      <label for="firstName">First name</label>
+      <input type="text" formControlName="firstName" />
+    </p>
+    <p>
+      <label for="lastName">Last name</label>
+      <input type="text" formControlName="lastName" />
+    </p>
+    <p>
+      <label for="birthDate">Date of birth</label>
+      <input type="date" formControlName="birthDate" />
+    </p>
+  </fieldset>
+  <ul>
+    <li
+      class="cv-form-exp"
+      *ngFor="
+        let expForm of cvGroup.controls.experiences.controls;
+        let i = index
+      "
+    >
+      <experience-form [formControl]="expForm"></experience-form>
+      <button type="button" (click)="removeExperience(i)">X</button>
+    </li>
+  </ul>
+  <div class="cv-form-actions">
+    <button type="button" (click)="addExperience()">ADD EXPERIENCE</button>
+    <button type="submit">ADD CV</button>
+  </div>
+</form>

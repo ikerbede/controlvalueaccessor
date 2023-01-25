@@ -1,0 +1,15 @@
+$componentId: 'cv-form';
+
+.#{$componentId} {
+  &-exp {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &-actions {
+    display: flex;
+    justify-content: space-around;
+  }
+}

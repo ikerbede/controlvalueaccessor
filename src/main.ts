@@ -1,8 +1,8 @@
 import './polyfills';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { CvComponent } from './app/cv/cv.component';
+import { AppComponent } from './app/app.component';
 
-bootstrapApplication(CvComponent)
+bootstrapApplication(AppComponent)
   .then((ref) => {
     // Ensure Angular destroys itself on hot reloads.
     if (window['ngRef']) {

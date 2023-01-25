@@ -1,1 +1,16 @@
 /* Add application styles & imports to this file! */
+
+fieldset {
+  margin-bottom: 16px;
+}
+
+fieldset > p {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

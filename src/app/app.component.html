@@ -1,0 +1,9 @@
+<h2>Add new CV!</h2>
+<cv-form (cvAdded)="addCv($event)"></cv-form>
+
+<h2>Saved CVs</h2>
+<ul>
+  <li *ngFor="let cv of cvs">
+    <cv [cv]="cv"></cv>
+  </li>
+</ul>
