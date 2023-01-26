@@ -1,0 +1,31 @@
+$componentId: 'app';
+
+:host {
+  margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+
+    .app-cv-form {
+      margin-right: 20px;
+    }
+    .app-cvs {
+      padding-left: 20px;
+      border-left: 1px solid black;
+    }
+  }
+}
+
+.#{$componentId} {
+  &-cvs-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      margin-right: 16px;
+      margin-bottom: 16px;
+    }
+  }
+}

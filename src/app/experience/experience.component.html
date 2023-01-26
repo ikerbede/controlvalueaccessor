@@ -1,4 +1,8 @@
-<p class="experience-title">{{ experience.company }} - {{ experience.role }}</p>
+<p class="experience-title">
+  <strong>{{ experience.company }}</strong>
+  <span>-</span>
+  <span>{{ experience.role }}</span>
+</p>
 <p class="experience-daterange">
   {{ experience.startDate | date }} →
   {{ experience.endDate ? (experience.endDate | date) : 'Today' }}

@@ -1,9 +1,13 @@
-<h2>Add new CV!</h2>
-<cv-form (cvAdded)="addCv($event)"></cv-form>
+<section class="app-cv-form">
+  <h2>Add new CV!</h2>
+  <cv-form (cvAdded)="addCv($event)"></cv-form>
+</section>
 
-<h2>Saved CVs</h2>
-<ul>
-  <li *ngFor="let cv of cvs">
-    <cv [cv]="cv"></cv>
-  </li>
-</ul>
+<section class="app-cvs">
+  <h2>Saved CVs</h2>
+  <ul class="app-cvs-list">
+    <li class="app-cvs-list-item" *ngFor="let cv of cvs">
+      <cv [cv]="cv"></cv>
+    </li>
+  </ul>
+</section>

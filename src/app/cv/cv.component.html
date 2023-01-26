@@ -1,10 +1,12 @@
-<p>
-  <span>{{ cv.firstName }}</span>
-  <span>{{ cv.lastName }}</span>
-  <span>{{ cv.birthDate | date }}</span>
-</p>
-<ul>
-  <li *ngFor="let exp of cv.experiences">
-    <experience [experience]="exp"></experience>
-  </li>
-</ul>
+<div class="cv">
+  <div class="cv-personal-data">
+    <h3>{{ cv.firstName }} {{ cv.lastName }}</h3>
+    <span>-</span>
+    <span>{{ cv.birthDate | date: 'yyy-MM-dd' }}</span>
+  </div>
+  <ul>
+    <li class="cv-experience" *ngFor="let exp of cv.experiences">
+      <experience [experience]="exp"></experience>
+    </li>
+  </ul>
+</div>

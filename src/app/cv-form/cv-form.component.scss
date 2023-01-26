@@ -6,6 +6,10 @@ $componentId: 'cv-form';
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    button {
+      margin-left: 16px;
+    }
   }
 
   &-actions {
